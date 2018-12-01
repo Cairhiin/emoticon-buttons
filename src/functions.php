@@ -56,6 +56,7 @@ function createEmoteButtonBar($post_id, $metaArray, $buttonArray) {
     <div class="emoteButtons" data-postid="<?php echo $post_id ?>" id="<?php echo $post_id ?>">
   <?php
     for ($i=0; $i<count($buttonArray); $i++) {
+        // expects button text to have Font Awesome emoticons and breaks the string based on those into pieces
         $pieces = explode("/i> ", $buttonArray[$i]);
         ?>
         <div class="emoteButtons__buttonContainer">
