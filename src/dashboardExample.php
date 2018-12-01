@@ -19,12 +19,12 @@ get_header(); ?>
             <?php
               // Example array of button text
               $buttonArray = ["<i class='far fa-smile-beam'></i> Joy", "<i class='far fa-sad-tear'></i> Sad",
-								"<i class='far fa-thumbs-up'></i> Like", "<i class='far fa-thumbs-down'></i> Dislike"];
+		"<i class='far fa-thumbs-up'></i> Like", "<i class='far fa-thumbs-down'></i> Dislike"];
               for ($i=0; $i<count($buttonArray); $i++) {
                 ?>
                 <button class="dashboard__sort_buttons__button" data-id="<?php echo $i+1 ?>">
-									<?php echo $buttonArray[$i] ?>
-								</button>
+			<?php echo $buttonArray[$i] ?>
+		</button>
                 <?php
               }
             ?>
