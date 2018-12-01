@@ -47,4 +47,23 @@ function emoteButton_handleAjax() {
   }
   wp_send_json( $response );
 }
+
+/**
+ * Function to create custom emoteBUtton bars
+ */
+function createEmoteButtonBar($post_id, $metaArray, $buttonArray) {
+  ?>
+    <div class="emoteButtons" data-postid="<?php echo $post_id ?>" id="<?php echo $post_id ?>">
+  <?php
+    for ($i=0; $i<count($buttonArray); $i++) {
+        $pieces = explode("/i> ", $buttonArray[$i]);
+        ?>
+        <div class="emoteButtons__buttonContainer">
+            <button data-votes="<?php echo $metaArray[$pieces[1]]; ?>" data-id="<?php echo $i+1 ?>"><?php echo $buttonArray[$i] ?>
+            <span><?php if($metaArray[$pieces[1]]) { echo $metaArray[$pieces[1]]; } else echo "0" ?></span></button>
+        </div>
+  <?php } ?>
+    </div>
+  <?php
+}
 ?>
