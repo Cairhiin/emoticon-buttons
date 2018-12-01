@@ -18,10 +18,13 @@ get_header(); ?>
             <div class="row dashboard__sort_buttons">
             <?php
               // Example array of button text
-              $buttonArray = ["<i class='far fa-smile-beam'></i> Joy", "<i class='far fa-sad-tear'></i> Sad", "<i class='far fa-thumbs-up'></i> Like", "<i class='far fa-thumbs-down'></i> Dislike"];
+              $buttonArray = ["<i class='far fa-smile-beam'></i> Joy", "<i class='far fa-sad-tear'></i> Sad",
+								"<i class='far fa-thumbs-up'></i> Like", "<i class='far fa-thumbs-down'></i> Dislike"];
               for ($i=0; $i<count($buttonArray); $i++) {
                 ?>
-                <button class="dashboard__sort_buttons__button" data-id="<?php echo $i+1 ?>"><?php echo $buttonArray[$i] ?></button>
+                <button class="dashboard__sort_buttons__button" data-id="<?php echo $i+1 ?>">
+									<?php echo $buttonArray[$i] ?>
+								</button>
                 <?php
               }
             ?>
@@ -29,7 +32,8 @@ get_header(); ?>
             <div id="dashboard">
               <?php
               $myImagesDir = get_bloginfo('url').'/wordpress/wp-content/themes/reimari/images/';
-              $the_query = new WP_Query( array('posts_per_page' => 20, 'cat' => 5, 'orderby' => 'date', 'order' => 'DESC' ) );
+              $the_query = new WP_Query( array('posts_per_page' => 20, 'cat' => 5,
+								'orderby' => 'date', 'order' => 'DESC' ) );
               $metaArray = [];
             while ($the_query -> have_posts()) : $the_query -> the_post();
             $post_id = get_the_ID();
