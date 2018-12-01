@@ -1,0 +1,123 @@
+.emoteButtons {
+	display: flex;
+}
+
+.emoteButtons__buttonContainer {
+	position: relative;
+	padding: 0 5px 0 0;
+	margin-right: 5px;
+}
+
+.emoteButtons__buttonContainer button {
+	border: 1px solid #e2e2e2;
+	border-radius: 5px;
+	background-color: #e2e2e2;
+	height: 30px;
+	min-width: 75px;
+	font-size: 1.5rem;
+}
+
+.emoteButtons__buttonContainer button i {
+	font-size: 1.8rem;
+}
+
+.emoteButtons__buttonContainer button:hover {
+	border: 1px solid #333;
+	background-color: #333;
+	color: white;
+}
+
+.emoteButtons__buttonContainer button span {
+	font-size: 1.2rem;
+	background-color: #333;
+	color: white;
+	padding: 1px 3px;
+	margin-left: 5px;
+	border: 1px solid #333;
+	border-radius: 4px;
+}
+
+/* Utility Classes */
+.voted {
+	background-color: #80CBC4 !important;
+	color: #222;
+	border: 1px solid #80CBC4 !important;
+}
+
+.voted:hover {
+	border: 1px solid #80CBC4 !important;
+	color: #222 !important;
+}
+
+.unvoted:hover {
+	border: 1px solid #e2e2e2 !important;
+	background-color: #e2e2e2 !important;
+	color: #333 !important;
+}
+.sorted_by {
+	color: white;
+	background-color: #4E342E !important;
+	border: 1px solid #4E342E !important;
+}
+/* Utility Classes */
+
+
+.dashboard {
+	background-color: white;
+	display: flex;
+	margin-bottom: 2px;
+}
+
+.dashboard__image {
+	width: 200px;
+}
+
+.dashboard__image img {
+	width: 100%;
+	height: auto;
+}
+
+.dashboard__content {
+	padding: 10px;
+	font-family: 'Exo 2', "Impact";
+	font-size: 1.5rem;
+}
+
+.dashboard__content__title {
+	font-weight: 700;
+	font-family: 'Homenaje', "Impact";
+	font-size: 2.5rem;
+}
+
+.dashboard__content__author {
+	color: #555;
+	font-size: 1.3rem;
+	margin-top: -5px;
+}
+
+.dashboard__content__ratings {
+	margin-top: 10px;
+}
+
+.dashboard__sort_buttons {
+	padding: 10px;
+	font-family: 'Exo 2', "Impact";
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.dashboard__sort_buttons__button {
+	margin: 0 5px;
+	background-color: #BCAAA4;
+	border: 1px solid #BCAAA4;
+	border-radius: 15px;
+	height: 30px;
+	min-width: 100px;
+}
+
+.dashboard__sort_buttons__button:hover {
+	color: white;
+	background-color: #4E342E;
+	border: 1px solid #4E342E;
+}
