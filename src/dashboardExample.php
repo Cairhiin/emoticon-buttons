@@ -18,8 +18,8 @@ get_header(); ?>
             <div class="row dashboard__sort_buttons">
             <?php
               // Example array of button text (requires Font Awesome)
-              $buttonArray = ["<i class='far fa-smile-beam'></i> Joy", "<i class='far fa-sad-tear'></i> Sad",
-		"<i class='far fa-thumbs-up'></i> Like", "<i class='far fa-thumbs-down'></i> Dislike"];
+              $buttonArray = ["<i class='far fa-smile-beam'></i> Innostava", "<i class='far fa-sad-tear'></i> Ärsyttävä",
+		"<i class='far fa-thumbs-up'></i> Hyödyllinen", "<i class='far fa-thumbs-down'></i> Tylsä"];
               for ($i=0; $i<count($buttonArray); $i++) {
                 ?>
                 <button class="dashboard__sort_buttons__button" data-id="<?php echo $i+1 ?>">
